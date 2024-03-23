@@ -5,7 +5,9 @@ description = "App for capturing signature images according to the myPhoto speci
 authors = [
     {name = "Stefanos Chalkidis"},
 ]
-dependencies = []
+dependencies = [
+    "tomlkit>=0.12.4",
+]
 requires-python = ">=3.11,<3.12"
 readme = "README.md"
 license = {text = "MIT"}
