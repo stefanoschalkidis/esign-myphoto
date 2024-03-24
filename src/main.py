@@ -1,7 +1,12 @@
+import logging
 import sys
 from pathlib import Path
 
 from esign_myphoto import io as app_io
+
+log_format = "[%(levelname)s] - %(message)s"
+handlers = (logging.StreamHandler(sys.stdout),)
+logging.basicConfig(level=logging.INFO, format=log_format, handlers=handlers)
 
 root_path = Path(__file__).parent.parent
 
