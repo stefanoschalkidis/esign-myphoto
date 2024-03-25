@@ -17,7 +17,9 @@ if getattr(sys, "frozen", False) and hasattr(sys, "_MEIPASS"):
     root_path = Path(sys.executable).parent
 
 if __name__ == "__main__":
+    config_path = root_path / "config/config.toml"
     load_i18n.load_path.append(str(data_path / "i18n"))
+    load_i18n.set("locale", app_io.load_lang_code(config_path))
     i18n.initialize()
 
-    sig_config = app_io.load_sig_config(root_path / "config/config.toml")
+    sig_config = app_io.load_sig_config(config_path)
