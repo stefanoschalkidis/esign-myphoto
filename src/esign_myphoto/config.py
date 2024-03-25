@@ -3,8 +3,8 @@ from tomlkit.items import Table, String, Integer
 
 class SigConfig:
     def __init__(self, table: Table):
-        self.license = None
-        self.reason = None
+        self.license: str | None = None
+        self.reason: str | None = None
         self.image_width = 1200
         self.image_height = 400
         self.mime_type = "image/jpeg"
