@@ -11,12 +11,10 @@ from esign_myphoto.config import SigConfig
 def load_lang_code(file_path: Path) -> str:
     try:
         with open(file_path, mode="rt", encoding="utf-8") as config_file:
-            toml_config = tomlkit.load(config_file)
+            config = tomlkit.load(config_file)
 
-            if "language" in toml_config and isinstance(
-                toml_config["language"], String
-            ):
-                if str(toml_config["language"]).lower() == "el":
+            if "language" in config and isinstance(config["language"], String):
+                if str(config["language"]).lower() == "el":
                     return "el"
             return "en"
     except FileNotFoundError:
@@ -26,12 +24,10 @@ def load_lang_code(file_path: Path) -> str:
 def load_sig_config(file_path: Path) -> SigConfig | None:
     try:
         with open(file_path, mode="rt", encoding="utf-8") as config_file:
-            toml_config = tomlkit.load(config_file)
+            config = tomlkit.load(config_file)
 
-            if "signature" in toml_config and isinstance(
-                toml_config["signature"], Table
-            ):
-                sig_config = SigConfig(toml_config["signature"])
+            if "signature" in config and isinstance(config["signature"], Table):
+                sig_config = SigConfig(config["signature"])
 
                 if sig_config.license and sig_config.reason:
                     return sig_config
