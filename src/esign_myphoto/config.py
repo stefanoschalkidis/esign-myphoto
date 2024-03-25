@@ -2,7 +2,7 @@ from tomlkit.items import Table
 
 
 class SigConfig:
-    def __init__(self, toml_table: Table):
+    def __init__(self, table: Table):
         self.license = None
         self.reason = None
         self.image_width = 1200
@@ -15,18 +15,18 @@ class SigConfig:
         self.padding_y = 0.0
         self.flags = 0x002000 | 0x080000  # RenderOutputBase64 | RenderColor32BPP
 
-        if "license" in toml_table:
-            self.license = str(toml_table["license"])
+        if "license" in table:
+            self.license = str(table["license"])
 
-        if "reason" in toml_table:
-            self.reason = str(toml_table["reason"])
+        if "reason" in table:
+            self.reason = str(table["reason"])
 
-        if "image_width" in toml_table:
-            loaded_image_width = toml_table["image_width"]
+        if "image_width" in table:
+            loaded_image_width = table["image_width"]
             if isinstance(loaded_image_width, int) and loaded_image_width <= 2000:
                 self.image_width = loaded_image_width
 
-        if "image_height" in toml_table:
-            loaded_image_height = toml_table["image_height"]
+        if "image_height" in table:
+            loaded_image_height = table["image_height"]
             if isinstance(loaded_image_height, int) and loaded_image_height <= 2000:
                 self.image_height = loaded_image_height
