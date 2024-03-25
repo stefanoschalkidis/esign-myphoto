@@ -1,4 +1,4 @@
-from tomlkit.items import Table
+from tomlkit.items import Table, String
 
 
 class SigConfig:
@@ -15,10 +15,10 @@ class SigConfig:
         self.padding_y = 0.0
         self.flags = 0x002000 | 0x080000  # RenderOutputBase64 | RenderColor32BPP
 
-        if "license" in table:
+        if "license" in table and isinstance(table["license"], String):
             self.license = str(table["license"])
 
-        if "reason" in table:
+        if "reason" in table and isinstance(table["reason"], String):
             self.reason = str(table["reason"])
 
         if "image_width" in table:
