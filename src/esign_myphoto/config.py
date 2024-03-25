@@ -1,4 +1,4 @@
-from tomlkit.items import Table, String
+from tomlkit.items import Table, String, Integer
 
 
 class SigConfig:
@@ -23,10 +23,10 @@ class SigConfig:
 
         if "image_width" in table:
             loaded_image_width = table["image_width"]
-            if isinstance(loaded_image_width, int) and loaded_image_width <= 2000:
-                self.image_width = loaded_image_width
+            if isinstance(loaded_image_width, Integer) and loaded_image_width <= 2000:
+                self.image_width = int(loaded_image_width)
 
         if "image_height" in table:
             loaded_image_height = table["image_height"]
-            if isinstance(loaded_image_height, int) and loaded_image_height <= 2000:
-                self.image_height = loaded_image_height
+            if isinstance(loaded_image_height, Integer) and loaded_image_height <= 2000:
+                self.image_height = int(loaded_image_height)
