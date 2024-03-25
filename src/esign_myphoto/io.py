@@ -8,9 +8,9 @@ from esign_myphoto import i18n
 from esign_myphoto.config import SigConfig
 
 
-def load_lang_code(file_path: Path) -> str:
+def load_lang_code(file: Path) -> str:
     try:
-        with open(file_path, mode="rt", encoding="utf-8") as config_file:
+        with open(file, mode="rt", encoding="utf-8") as config_file:
             config = tomlkit.load(config_file)
 
             if "language" in config and isinstance(config["language"], String):
@@ -21,9 +21,9 @@ def load_lang_code(file_path: Path) -> str:
         return "en"
 
 
-def load_sig_config(file_path: Path) -> SigConfig | None:
+def load_sig_config(file: Path) -> SigConfig | None:
     try:
-        with open(file_path, mode="rt", encoding="utf-8") as config_file:
+        with open(file, mode="rt", encoding="utf-8") as config_file:
             config = tomlkit.load(config_file)
 
             if "signature" in config and isinstance(config["signature"], Table):
