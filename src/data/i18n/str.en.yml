@@ -1,2 +1,3 @@
 en:
   msg_config_file_not_found: Configuration file not found.
+  msg_sig_table_missing: Signature table missing in configuration file.

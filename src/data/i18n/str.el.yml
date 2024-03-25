@@ -1,2 +1,3 @@
 el:
   msg_config_file_not_found: Το αρχείο ρυθμίσεων δεν βρέθηκε.
+  msg_sig_table_missing: Ο πίνακας signature λείπει από το αρχείο ρυθμίσεων.

@@ -20,6 +20,8 @@ def load_sig_config(file_path: Path) -> SigConfig | None:
 
                 if sig_config.license and sig_config.reason:
                     return sig_config
+            else:
+                log.error(i18n.tr.MSG_SIG_TABLE_MISSING)
     except FileNotFoundError as exc:
         log.error(i18n.tr.MSG_CONFIG_FILE_NOT_FOUND, exc_info=exc)
     return None
