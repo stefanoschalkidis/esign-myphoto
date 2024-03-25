@@ -5,7 +5,7 @@
 groups = ["default", "dev"]
 strategy = ["cross_platform", "inherit_metadata"]
 lock_version = "4.4.1"
-content_hash = "sha256:d6c82bdb0068140d94393ad00dc8b5f53005f0ae99d639c77f4f22dde2fce397"
+content_hash = "sha256:78479991d12e20f201605ce39ab547119b17feca07c260cf5d277833a21ee461"
 
 [[package]]
 name = "colorama"
@@ -171,6 +171,16 @@ files = [
 ]
 
 [[package]]
+name = "typing"
+version = "3.7.4.3"
+requires_python = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+summary = "Type Hints for Python"
+groups = ["default"]
+files = [
+    {file = "typing-3.7.4.3.tar.gz", hash = "sha256:1187fb9c82fd670d10aa07bbb6cfcfe4bdda42d6fab8d5134f04e8c4d0b71cc9"},
+]
+
+[[package]]
 name = "typing-extensions"
 version = "4.10.0"
 requires_python = ">=3.8"
@@ -190,4 +200,44 @@ groups = ["dev"]
 files = [
     {file = "vulture-2.11-py2.py3-none-any.whl", hash = "sha256:12d745f7710ffbf6aeb8279ba9068a24d4e52e8ed333b8b044035c9d6b823aba"},
     {file = "vulture-2.11.tar.gz", hash = "sha256:f0fbb60bce6511aad87ee0736c502456737490a82d919a44e6d92262cb35f1c2"},
+]
+
+[[package]]
+name = "windows-tools-installed-software"
+version = "0.5.4"
+requires_python = ">=3.5"
+summary = "List of installed software from Uninstall registry keys, 32 and 64 bits"
+groups = ["default"]
+dependencies = [
+    "windows-tools-registry>=0.5.1",
+]
+files = [
+    {file = "windows_tools.installed_software-0.5.4-py3-none-any.whl", hash = "sha256:f55d8f2fa00f21035acd24a1a3bb8d12e0e09d932670f83268a158756b022ed6"},
+    {file = "windows_tools.installed_software-0.5.4.tar.gz", hash = "sha256:97175f47dcf3382e9cd897e6943f0e1d9fd90101e1b96018d8c28273db26aa73"},
+]
+
+[[package]]
+name = "windows-tools-misc"
+version = "1.0.0"
+requires_python = ">=3.5"
+summary = "Windows misc tools"
+groups = ["default"]
+files = [
+    {file = "windows_tools.misc-1.0.0-py3-none-any.whl", hash = "sha256:beaebb157e3cb5549a57911ad5375e07036fc636e7ef86e09e1e8ffabd47faab"},
+    {file = "windows_tools.misc-1.0.0.tar.gz", hash = "sha256:1cd099ff699fa32b2696ac109c6c2886fd5a4c4454928eecd3fc76835026d937"},
+]
+
+[[package]]
+name = "windows-tools-registry"
+version = "1.1.0"
+requires_python = ">=3.5"
+summary = "Windows registry 32 and 64 bits simple API"
+groups = ["default"]
+dependencies = [
+    "typing>=3.5.0",
+    "windows-tools-misc>=1.0.0",
+]
+files = [
+    {file = "windows_tools.registry-1.1.0-py3-none-any.whl", hash = "sha256:587b5fe41f77c1100f54b6f7b69b51ebc2b0a9948100924adfda77ac1b6b34a9"},
+    {file = "windows_tools.registry-1.1.0.tar.gz", hash = "sha256:5181ead7c8d995589fc2a650bc5e55943426866e4819a371ba3269f7294cacc7"},
 ]

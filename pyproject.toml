@@ -9,6 +9,7 @@ dependencies = [
     "tomlkit>=0.12.4",
     "i18nice>=0.13.2",
     "pyyaml>=6.0.1",
+    "windows-tools-installed-software>=0.5.4",
 ]
 requires-python = ">=3.11,<3.12"
 readme = "README.md"
@@ -50,6 +51,12 @@ no_implicit_reexport = true
 strict_equality = true
 warn_redundant_casts = true
 warn_unused_ignores = true
+
+[[tool.mypy.overrides]]
+module = [
+    "windows_tools.*",
+]
+ignore_missing_imports = true
 
 [tool.vulture]
 min_confidence = 100

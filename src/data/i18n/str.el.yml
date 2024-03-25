@@ -1,3 +1,5 @@
 el:
   msg_config_file_not_found: Το αρχείο ρυθμίσεων δεν βρέθηκε.
   msg_sig_table_missing: Ο πίνακας signature λείπει από το αρχείο ρυθμίσεων.
+  msg_wacom_driver_not_installed: Ο οδηγός Wacom (STU ή Tablet) δεν είναι εγκατεστημένος.
+  msg_wacom_sdk_not_installed: Το Wacom Signature SDK δεν είναι εγκατεστημένο.
