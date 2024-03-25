@@ -4,6 +4,7 @@ import tomlkit
 import logging as log
 from tomlkit.items import Table
 
+from esign_myphoto import i18n
 from esign_myphoto.config import SigConfig
 
 
@@ -19,6 +20,6 @@ def load_sig_config(file_path: Path) -> SigConfig | None:
 
                 if sig_config.license and sig_config.reason:
                     return sig_config
-    except FileNotFoundError:
-        log.error("Configuration file does not exist.")
+    except FileNotFoundError as exc:
+        log.error(i18n.tr.MSG_CONFIG_FILE_NOT_FOUND, exc_info=exc)
     return None
