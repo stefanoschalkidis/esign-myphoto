@@ -1,3 +1,5 @@
+import re
+from dataclasses import dataclass
 from pathlib import Path
 
 import tomlkit
@@ -6,6 +8,14 @@ from tomlkit.items import Table, String
 
 from esign_myphoto import i18n
 from esign_myphoto.config import SigConfig
+
+INVALID_CHARACTERS = '[\\\\/:*?"<>|]'
+
+
+@dataclass
+class Person:
+    last_name: str
+    first_name: str
 
 
 def load_lang_code(file: Path) -> str:
@@ -36,3 +46,21 @@ def load_sig_config(file: Path) -> SigConfig | None:
     except FileNotFoundError as exc:
         log.error(i18n.tr.MSG_CONFIG_FILE_NOT_FOUND, exc_info=exc)
     return None
+
+
+def prompt_for_signer() -> Person:
+    last_name = input(i18n.tr.QUESTION_ENTER_LAST_NAME).strip()
+
+    while re.search(INVALID_CHARACTERS, last_name) or not last_name:
+        if re.search(INVALID_CHARACTERS, last_name):
+            log.warning(i18n.tr.MSG_INVALID_CHARACTER_ENTERED)
+        last_name = input(i18n.tr.QUESTION_ENTER_LAST_NAME).strip()
+
+    first_name = input(i18n.tr.QUESTION_ENTER_FIRST_NAME).strip()
+
+    while re.search(INVALID_CHARACTERS, first_name) or not first_name:
+        if re.search(INVALID_CHARACTERS, first_name):
+            log.warning(i18n.tr.MSG_INVALID_CHARACTER_ENTERED)
+        first_name = input(i18n.tr.QUESTION_ENTER_FIRST_NAME).strip()
+
+    return Person(last_name, first_name)

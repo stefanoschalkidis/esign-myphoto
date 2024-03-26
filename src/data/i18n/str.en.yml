@@ -1,5 +1,9 @@
 en:
   msg_config_file_not_found: Configuration file not found.
+  msg_invalid_character_entered: 'Invalid character entered: \\ / : * ? " < > |'
   msg_sig_table_missing: Signature table missing in configuration file.
   msg_wacom_driver_not_installed: Wacom driver (STU or Tablet) is not installed.
   msg_wacom_sdk_not_installed: Wacom Signature SDK is not installed.
+
+  question_enter_first_name: "[INFO] Please enter the first name: "
+  question_enter_last_name: "[INFO] Please enter the last name: "
