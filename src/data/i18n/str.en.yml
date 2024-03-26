@@ -1,4 +1,7 @@
 en:
+  err_signature_capture: Error during signature capture.
+
+  msg_capturing_signature: Capturing signature...
   msg_config_file_not_found: Configuration file not found.
   msg_invalid_character_entered: 'Invalid character entered: \\ / : * ? " < > |'
   msg_sig_table_missing: Signature table missing in configuration file.

@@ -1,4 +1,7 @@
 el:
+  err_signature_capture: Σφάλμα κατά τη σύλληψη υπογραφής.
+
+  msg_capturing_signature: Σύλληψη υπογραφής...
   msg_config_file_not_found: Το αρχείο ρυθμίσεων δεν βρέθηκε.
   msg_invalid_character_entered: 'Εισαγωγή μη έγκυρου χαρακτήρα: \\ / : * ? " < > |'
   msg_sig_table_missing: Ο πίνακας signature λείπει από το αρχείο ρυθμίσεων.
