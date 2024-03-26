@@ -1,9 +1,14 @@
+import base64
 import re
 from dataclasses import dataclass
+from datetime import datetime
+from io import BytesIO
 from pathlib import Path
 
 import tomlkit
 import logging as log
+
+from PIL import Image
 from tomlkit.items import Table, String
 
 from esign_myphoto import i18n
@@ -64,3 +69,17 @@ def prompt_for_signer() -> Person:
         first_name = input(i18n.tr.QUESTION_ENTER_FIRST_NAME).strip()
 
     return Person(last_name, first_name)
+
+
+def save_signature(sig_data: str, signer: Person, root_path: Path) -> bool:
+    try:
+        save_path = root_path / "output"
+        save_path.mkdir(parents=True, exist_ok=True)
+        date = datetime.today().strftime("%Y%m%d")
+        file_path = save_path / f"{date}_{signer.last_name}_{signer.first_name}.jpg"
+        image = Image.open(BytesIO(base64.b64decode(sig_data)))
+        image.save(file_path)
+        return True
+    except Exception:
+        log.error(i18n.tr.ERR_SIGNATURE_SAVING)
+        return False

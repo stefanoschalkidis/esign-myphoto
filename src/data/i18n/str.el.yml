@@ -1,5 +1,6 @@
 el:
-  err_signature_capture: Σφάλμα κατά τη σύλληψη υπογραφής.
+  err_signature_capture: Σφάλμα κατά τη σύλληψη της υπογραφής.
+  err_signature_saving: Σφάλμα κατά την αποθήκευση της υπογραφής.
 
   msg_capturing_signature: Σύλληψη υπογραφής...
   msg_config_file_not_found: Το αρχείο ρυθμίσεων δεν βρέθηκε.

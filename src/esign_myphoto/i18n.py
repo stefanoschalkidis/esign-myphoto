@@ -4,6 +4,7 @@ import i18n
 class Translations:
     def __init__(self):
         self.ERR_SIGNATURE_CAPTURE = i18n.t("str.err_signature_capture")
+        self.ERR_SIGNATURE_SAVING = i18n.t("str.err_signature_saving")
 
         self.MSG_CAPTURING_SIGNATURE = i18n.t("str.msg_capturing_signature")
         self.MSG_CONFIG_FILE_NOT_FOUND = i18n.t("str.msg_config_file_not_found")

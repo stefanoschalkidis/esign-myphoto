@@ -1,5 +1,6 @@
 en:
   err_signature_capture: Error during signature capture.
+  err_signature_saving: Error during signature saving.
 
   msg_capturing_signature: Capturing signature...
   msg_config_file_not_found: Configuration file not found.
