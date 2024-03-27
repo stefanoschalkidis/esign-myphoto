@@ -34,19 +34,28 @@ def capture_signature(
         sig_key,
     )
 
-    if dyn_cap_result == 0:
-        return sig_ctl.Signature.RenderBitmap(
-            "not_provided",
-            sig_config.image_width,
-            sig_config.image_height,
-            sig_config.mime_type,
-            sig_config.ink_width,
-            sig_config.ink_color,
-            sig_config.background_color,
-            sig_config.padding_x,
-            sig_config.padding_y,
-            sig_config.flags,
-        )
-    log.error(i18n.tr.ERR_SIGNATURE_CAPTURE)
-    log.error(f"Wacom error number {dyn_cap_result}.")
+    match dyn_cap_result:
+        case 0:
+            return sig_ctl.Signature.RenderBitmap(
+                "not_provided",
+                sig_config.image_width,
+                sig_config.image_height,
+                sig_config.mime_type,
+                sig_config.ink_width,
+                sig_config.ink_color,
+                sig_config.background_color,
+                sig_config.padding_x,
+                sig_config.padding_y,
+                sig_config.flags,
+            )
+        case 1:
+            log.error(i18n.tr.ERR_SIG_CAPTURE_CANCELLED)
+        case 100:
+            log.error(i18n.tr.ERR_NO_DIGITIZER_CONNECTED)
+        case 103:
+            log.error(i18n.tr.ERR_WACOM_SDK_NOT_LICENSED)
+            log.error(i18n.tr.MSG_PLEASE_RESTART_COMPUTER)
+        case _:
+            log.error(i18n.tr.ERR_SIGNATURE_CAPTURE)
+            log.error(f"Wacom error number {dyn_cap_result}.")
     return None

@@ -1,11 +1,15 @@
 el:
   err_license_or_reason_not_defined: "Sig config: πεδίο άδεια ή λόγος που δεν έχει καθοριστεί."
+  err_no_digitizer_connected: Δεν έχει συνδεθεί ψηφιακή γραφίδα.
+  err_wacom_sdk_not_licensed: Το Wacom Signature SDK δεν έχει λάβει άδεια χρήσης.
+  err_sig_capture_cancelled: Η σύλληψη της υπογραφής ακυρώθηκε.
   err_signature_capture: Σφάλμα κατά τη σύλληψη της υπογραφής.
   err_signature_saving: Σφάλμα κατά την αποθήκευση της υπογραφής.
 
   msg_capturing_signature: Σύλληψη υπογραφής...
   msg_config_file_not_found: Το αρχείο ρυθμίσεων δεν βρέθηκε.
   msg_invalid_character_entered: 'Εισαγωγή μη έγκυρου χαρακτήρα: \\ / : * ? " < > |'
+  msg_please_restart_computer: "Παρακαλώ επανεκκινήστε τον υπολογιστή σας."
   msg_press_enter_to_close: "[INFO] Πατήστε enter για να κλείσετε την εφαρμογή. "
   msg_sig_table_missing: Ο πίνακας signature λείπει από το αρχείο ρυθμίσεων.
   msg_signature_saved: Η υπογραφή αποθηκεύτηκε.
