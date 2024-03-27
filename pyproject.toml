@@ -34,6 +34,10 @@ dev = [
     "types-pywin32>=306.0.0.20240319",
     "types-Pillow>=10.2.0.20240324",
 ]
+dev_package = [
+    "pyinstaller>=6.5.0",
+    "pip>=24.0",
+]
 
 [tool.pdm.scripts]
 clean = "python utils/scripts/clean.py"
