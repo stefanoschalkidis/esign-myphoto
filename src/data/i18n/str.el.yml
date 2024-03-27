@@ -6,7 +6,7 @@ el:
   msg_capturing_signature: Σύλληψη υπογραφής...
   msg_config_file_not_found: Το αρχείο ρυθμίσεων δεν βρέθηκε.
   msg_invalid_character_entered: 'Εισαγωγή μη έγκυρου χαρακτήρα: \\ / : * ? " < > |'
-  msg_press_enter_to_close: "[INFO] Πατήστε enter για να κλείσετε."
+  msg_press_enter_to_close: "[INFO] Πατήστε enter για να κλείσετε την εφαρμογή. "
   msg_sig_table_missing: Ο πίνακας signature λείπει από το αρχείο ρυθμίσεων.
   msg_signature_saved: Η υπογραφή αποθηκεύτηκε.
   msg_wacom_driver_not_installed: Ο οδηγός Wacom (STU ή Tablet) δεν είναι εγκατεστημένος.
