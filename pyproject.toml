@@ -33,6 +33,7 @@ dev = [
     "vulture>=2.11",
     "types-pywin32>=306.0.0.20240319",
     "types-Pillow>=10.2.0.20240324",
+    "pyinstaller-versionfile>=2.1.1",
 ]
 dev_package = [
     "pyinstaller>=6.5.0",
@@ -48,6 +49,7 @@ lint-vulture = "vulture src"
 main = "python src/main.py"
 test = "pytest tests/"
 trivy = "python utils/scripts/trivy.py"
+version-info = "create-version-file src/data/version/version_info.yml --outfile src/data/version/version_info.txt"
 
 [tool.mypy]
 mypy_path="stubs"

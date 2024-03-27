@@ -80,6 +80,15 @@ pdm trivy
 The vulnerability report ***trivy-report.html*** can be found in the **target**
 directory.
 
+### Pre release
+
+Update the program version in ***pyproject.toml*** and ***version_info.yml***.
+To update the version in the ***version_info.txt*** file run:
+
+```bash
+pdm version-info
+```
+
 ### Building
 
 Open *PowerShell* and clone the git repository into the
@@ -110,7 +119,7 @@ The *typing* package needs to be removed as it clashes with *PyInstaller*:
 Build the application via:
 
 ```bash
-pdm run pyinstaller -n amy_e-sign_myphoto --add-data src/data:data .\src\main.py
+pdm run pyinstaller -n amy_e-sign_myphoto --add-data src/data:data --version-file=src/data/version/version_info.txt .\src\main.py
 ```
 
 The application is bundled into the **amy_e-sign_myphoto** directory and can be
