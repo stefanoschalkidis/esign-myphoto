@@ -7,7 +7,7 @@ el:
 
   msg_capturing_signature: Σύλληψη υπογραφής...
   msg_config_file_not_found: Το αρχείο ρυθμίσεων δεν βρέθηκε.
-  msg_invalid_character_entered: 'Εισαγωγή μη έγκυρου χαρακτήρα: \\ / : * ? " < > |'
+  msg_invalid_character_entered: 'Εισαγωγή μη έγκυρου χαρακτήρα: \ / : * ? " < > |'
   msg_please_restart_computer: "Παρακαλώ επανεκκινήστε τον υπολογιστή σας."
   msg_press_enter_to_close: "[INFO] Πατήστε enter για να κλείσετε την εφαρμογή. "
   msg_sig_capture_cancelled: Η σύλληψη της υπογραφής ακυρώθηκε.

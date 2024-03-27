@@ -7,7 +7,7 @@ en:
 
   msg_capturing_signature: Capturing signature...
   msg_config_file_not_found: Configuration file not found.
-  msg_invalid_character_entered: 'Invalid character entered: \\ / : * ? " < > |'
+  msg_invalid_character_entered: 'Invalid character entered: \ / : * ? " < > |'
   msg_please_restart_computer: "Please restart your computer."
   msg_press_enter_to_close: "[INFO] Press enter to close the app. "
   msg_sig_capture_cancelled: Signature capture cancelled.
