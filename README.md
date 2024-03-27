@@ -54,6 +54,44 @@ For all other Wacom devices you need to install the
 
 ## Usage / Χρήση
 
+Download the latest version packaged as zip.
+Unzip the content to your desktop.
+Double-click the file ***amy_e-sign_myphoto.exe*** in the unzipped folder to
+start the application.
+A window will open for you to enter the signer's last and first name.
+
+![e-sign myPhoto user input (english)](docs/images/esign_myphoto_input_en.png)
+
+Press *enter* after you have entered the details to open the signature capture
+window.
+
+![e-sign myPhoto signature capture (english)](docs/images/esign_myphoto_capture_en.png)
+
+Press *OK* after the signature has been applied to save the signature.
+The signature is saved to the **output** folder next to the file
+***amy_e-sign_myphoto.exe***.
+
+---
+
+Κατεβάστε την τελευταία έκδοση σε μορφή zip.
+Αποσυμπιέστε το περιεχόμενο στην επιφάνεια εργασίας σας.
+Κάντε διπλό κλικ στο αρχείο ***amy_e-sign_myphoto.exe*** στο φάκελο που έχει
+αποσυμπιεστεί για να εκκινήσετε την εφαρμογή.
+Θα ανοίξει ένα παράθυρο για να εισαγάγετε το επώνυμο και το όνομα του
+υπογράφοντος.
+
+![e-sign myPhoto user input (greek)](docs/images/esign_myphoto_input_el.png)
+
+Πατήστε *enter* αφού εισαγάγετε τα στοιχεία για να ανοίξει το παράθυρο λήψης
+υπογραφής.
+
+![e-sign myPhoto signature capture (greek)](docs/images/esign_myphoto_capture_el.png)
+
+Πατήστε *Εντάξει* μετά τη σύλληψη της υπογραφής για να αποθηκεύσετε την
+υπογραφή.
+Η υπογραφή αποθηκεύεται στο φάκελο **output** δίπλα στο αρχείο
+***amy_e-sign_myphoto.exe***.
+
 ## License / Άδεια
 
 Licensed under the [MIT License](LICENSE.txt).
