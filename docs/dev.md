@@ -122,8 +122,8 @@ Build the application via:
 pdm run pyinstaller -n amy_e-sign_myphoto -F --add-data src/data:data --version-file=src/data/version/version_info.txt .\src\main.py
 ```
 
-The application is bundled into the **amy_e-sign_myphoto** directory and can be
-found in the **dist** directory.
+The application is bundled into the **amy_e-sign_myphoto.exe** executable and
+can be found in the **dist** directory.
 To remove the build directories run:
 
 ```bash
