@@ -62,6 +62,24 @@ To apply the updates run:
 pdm update --unconstrained --top
 ```
 
+The ***requirements.txt*** file is required for the trivy scanner.
+To update the ***requirements.txt*** file run:
+
+```bash
+pdm export -f requirements --without-hashes -o requirements.txt
+```
+
+### Vulnerabilities
+
+To check for vulnerabilities run:
+
+```bash
+pdm trivy
+```
+
+The vulnerability report ***trivy-report.html*** can be found in the **target**
+directory.
+
 ### Building
 
 Open *PowerShell* and clone the git repository into the
