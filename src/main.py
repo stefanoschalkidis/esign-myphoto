@@ -8,7 +8,7 @@ from esign_myphoto import io as app_io, i18n, utils, sig
 
 log_format = "[%(levelname)s] %(message)s"
 handlers = (logging.StreamHandler(sys.stdout),)
-logging.basicConfig(level=logging.INFO, format=log_format, handlers=handlers)
+logging.basicConfig(level=logging.INFO, format=log_format, handlers=handlers)  # NOSONAR
 
 data_path = Path(__file__).parent / "data"
 root_path = Path(__file__).parent.parent
