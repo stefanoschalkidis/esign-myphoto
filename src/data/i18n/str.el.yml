@@ -1,13 +1,17 @@
 el:
+  err_license_or_reason_not_defined: "Sig config: πεδίο άδεια ή λόγος που δεν έχει καθοριστεί."
   err_signature_capture: Σφάλμα κατά τη σύλληψη της υπογραφής.
   err_signature_saving: Σφάλμα κατά την αποθήκευση της υπογραφής.
 
   msg_capturing_signature: Σύλληψη υπογραφής...
   msg_config_file_not_found: Το αρχείο ρυθμίσεων δεν βρέθηκε.
   msg_invalid_character_entered: 'Εισαγωγή μη έγκυρου χαρακτήρα: \\ / : * ? " < > |'
+  msg_press_enter_to_close: "[INFO] Πατήστε enter για να κλείσετε."
   msg_sig_table_missing: Ο πίνακας signature λείπει από το αρχείο ρυθμίσεων.
+  msg_signature_saved: Η υπογραφή αποθηκεύτηκε.
   msg_wacom_driver_not_installed: Ο οδηγός Wacom (STU ή Tablet) δεν είναι εγκατεστημένος.
   msg_wacom_sdk_not_installed: Το Wacom Signature SDK δεν είναι εγκατεστημένο.
+  msg_welcome_to_esign_myphoto: Καλώς ήρθατε στο AMY e-sign myPhoto!
 
   question_enter_first_name: "[INFO] Παρακαλώ εισάγετε το όνομα: "
   question_enter_last_name: "[INFO] Παρακαλώ εισάγετε το επώνυμο: "

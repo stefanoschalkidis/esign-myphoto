@@ -1,10 +1,15 @@
 import logging as log
+import sys
+
 import windows_tools.installed_software as wintools
 
 from esign_myphoto import i18n
 
 
 def are_wacom_deps_met() -> bool:
+    if not sys.platform.startswith("win32"):
+        return True
+
     programs = wintools.get_installed_software()
     has_sdk = False
     has_stu = False

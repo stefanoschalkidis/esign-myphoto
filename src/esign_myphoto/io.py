@@ -79,6 +79,7 @@ def save_signature(sig_data: str, signer: Person, root_path: Path) -> bool:
         file_path = save_path / f"{date}_{signer.last_name}_{signer.first_name}.jpg"
         image = Image.open(BytesIO(base64.b64decode(sig_data)))
         image.save(file_path)
+        log.info(i18n.tr.MSG_SIGNATURE_SAVED)
         return True
     except Exception:
         log.error(i18n.tr.ERR_SIGNATURE_SAVING)

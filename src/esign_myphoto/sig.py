@@ -1,4 +1,6 @@
 import logging as log
+import sys
+
 import win32com.client
 
 from esign_myphoto import i18n
@@ -9,6 +11,9 @@ from esign_myphoto.io import Person
 def capture_signature(
     sig_config: SigConfig, lang_code: str, signer: Person
 ) -> str | None:
+    if not sys.platform.startswith("win32"):
+        return None
+
     sig_ctl = win32com.client.Dispatch("Florentis.SigCtl.1")
     sig_key = win32com.client.Dispatch("Florentis.Key.1")
     sig_hash = win32com.client.Dispatch("Florentis.Hash.1")

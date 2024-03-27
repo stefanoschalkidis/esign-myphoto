@@ -1,13 +1,17 @@
 en:
+  err_license_or_reason_not_defined: "Sig config: license or reason field not defined."
   err_signature_capture: Error during signature capture.
   err_signature_saving: Error during signature saving.
 
   msg_capturing_signature: Capturing signature...
   msg_config_file_not_found: Configuration file not found.
   msg_invalid_character_entered: 'Invalid character entered: \\ / : * ? " < > |'
+  msg_press_enter_to_close: "[INFO] Press enter to close."
   msg_sig_table_missing: Signature table missing in configuration file.
+  msg_signature_saved: Signature saved.
   msg_wacom_driver_not_installed: Wacom driver (STU or Tablet) is not installed.
   msg_wacom_sdk_not_installed: Wacom Signature SDK is not installed.
+  msg_welcome_to_esign_myphoto: Welcome to AMY e-sign myPhoto!
 
   question_enter_first_name: "[INFO] Please enter the first name: "
   question_enter_last_name: "[INFO] Please enter the last name: "
