@@ -82,5 +82,5 @@ def save_signature(sig_data: str, signer: Person, root_path: Path) -> bool:
         log.info(i18n.tr.MSG_SIGNATURE_SAVED)
         return True
     except Exception:
-        log.error(i18n.tr.ERR_SIGNATURE_SAVING)
+        log.error(i18n.tr.ERR_DURING_SIG_SAVING)
         return False

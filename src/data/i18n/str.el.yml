@@ -1,10 +1,10 @@
 el:
+  err_during_sig_capture: Σφάλμα κατά τη σύλληψη της υπογραφής.
+  err_during_sig_saving: Σφάλμα κατά την αποθήκευση της υπογραφής.
   err_license_or_reason_not_defined: "Sig config: πεδίο άδεια ή λόγος που δεν έχει καθοριστεί."
   err_no_digitizer_connected: Δεν έχει συνδεθεί ψηφιακή γραφίδα.
   err_wacom_sdk_not_licensed: Το Wacom Signature SDK δεν έχει λάβει άδεια χρήσης.
   err_sig_capture_cancelled: Η σύλληψη της υπογραφής ακυρώθηκε.
-  err_signature_capture: Σφάλμα κατά τη σύλληψη της υπογραφής.
-  err_signature_saving: Σφάλμα κατά την αποθήκευση της υπογραφής.
 
   msg_capturing_signature: Σύλληψη υπογραφής...
   msg_config_file_not_found: Το αρχείο ρυθμίσεων δεν βρέθηκε.

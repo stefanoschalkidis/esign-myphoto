@@ -56,6 +56,6 @@ def capture_signature(
             log.error(i18n.tr.ERR_WACOM_SDK_NOT_LICENSED)
             log.error(i18n.tr.MSG_PLEASE_RESTART_COMPUTER)
         case _:
-            log.error(i18n.tr.ERR_SIGNATURE_CAPTURE)
+            log.error(i18n.tr.ERR_DURING_SIG_CAPTURE)
             log.error(f"Wacom error number {dyn_cap_result}.")
     return None
