@@ -10,13 +10,13 @@ class Translations:
         )
         self.ERR_NO_DIGITIZER_CONNECTED = i18n.t("str.err_no_digitizer_connected")
         self.ERR_WACOM_SDK_NOT_LICENSED = i18n.t("str.err_wacom_sdk_not_licensed")
-        self.ERR_SIG_CAPTURE_CANCELLED = i18n.t("str.err_sig_capture_cancelled")
 
         self.MSG_CAPTURING_SIGNATURE = i18n.t("str.msg_capturing_signature")
         self.MSG_CONFIG_FILE_NOT_FOUND = i18n.t("str.msg_config_file_not_found")
         self.MSG_INVALID_CHARACTER_ENTERED = i18n.t("str.msg_invalid_character_entered")
         self.MSG_PLEASE_RESTART_COMPUTER = i18n.t("str.msg_please_restart_computer")
         self.MSG_PRESS_ENTER_TO_CLOSE = i18n.t("str.msg_press_enter_to_close")
+        self.MSG_SIG_CAPTURE_CANCELLED = i18n.t("str.msg_sig_capture_cancelled")
         self.MSG_SIG_TABLE_MISSING = i18n.t("str.msg_sig_table_missing")
         self.MSG_SIGNATURE_SAVED = i18n.t("str.msg_signature_saved")
         self.MSG_WACOM_DRIVER_NOT_INSTALLED = i18n.t(

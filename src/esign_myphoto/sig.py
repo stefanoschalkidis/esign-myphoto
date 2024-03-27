@@ -49,7 +49,7 @@ def capture_signature(
                 sig_config.flags,
             )
         case 1:
-            log.error(i18n.tr.ERR_SIG_CAPTURE_CANCELLED)
+            log.info(i18n.tr.MSG_SIG_CAPTURE_CANCELLED)
         case 100:
             log.error(i18n.tr.ERR_NO_DIGITIZER_CONNECTED)
         case 103:
