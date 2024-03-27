@@ -83,7 +83,7 @@ directory.
 ### Building
 
 Open *PowerShell* and clone the git repository into the
-*Windows root directory* ***C:\\***:
+*Windows root directory* **C:\\**:
 
 ```bash
 git clone git@github.com:stefanoschalkidis/esign-myphoto.git
