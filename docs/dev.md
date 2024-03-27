@@ -40,8 +40,6 @@ To lint the code run:
 pdm lint
 ```
 
-and:
-
 ```bash
 pdm lint-mypy
 ```
