@@ -1,4 +1,11 @@
-# AMY e-sign myPhoto
+<p align="center">
+  <picture>
+    <img alt="AMY e-sign myPhoto logo" src="docs/images/esign_myphoto_512_rounded.png" width="80">
+    </picture>
+</p>
+<h1 align="center">
+  AMY e-sign myPhoto 
+</h1>
 
 AMY e-sign myPhoto is an app for capturing signature images according to the
 [myPhoto](https://www.gsis.gr/polites-epiheiriseis/stoiheia-politon-kai-taytopoiitika-eggrafa/myPhoto)
