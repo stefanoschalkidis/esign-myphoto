@@ -47,5 +47,5 @@ if __name__ == "__main__":
     if not deps_check.success and deps_check.msg:
         init_err = deps_check.msg
 
-    app = App(init_err, root_path, load_result.sig_config)
+    app = App(init_err, root_path, data_path, load_result.sig_config)
     app.mainloop()

@@ -1,4 +1,5 @@
 import logging as log
+import sys
 import tkinter as tk
 from pathlib import Path
 
@@ -18,6 +19,7 @@ class App(tk.Tk):
         self,
         init_err: str | None,
         root_path: Path,
+        data_path: Path,
         sig_config: SigConfig,
     ):
         tk.Tk.__init__(self)
@@ -28,6 +30,9 @@ class App(tk.Tk):
         self._frame: tk.Frame | None = None
         self.title("AMY e-sign myPhoto")
         self.geometry(f"400x200+{screen_x}+{screen_y}")
+
+        if sys.platform.startswith("win"):
+            self.iconbitmap(data_path / "icons/logo/esign_myphoto.ico")
 
         if init_err:
             self.switch_frame(InitFrame(self, init_err))
