@@ -164,4 +164,5 @@ cython_debug/
 # Custom
 .scannerwork/
 config/
+logs/
 output/

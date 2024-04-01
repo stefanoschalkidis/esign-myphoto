@@ -7,13 +7,14 @@ el:
   err_initialization: Σφάλμα εκκίνησης.
   err_license_or_reason_not_defined: "Sig config: πεδίο άδεια ή λόγος που δεν έχει καθοριστεί."
   err_no_digitizer_connected: Δεν έχει συνδεθεί ψηφιακή γραφίδα.
-  err_wacom_sdk_not_licensed: Το Wacom Signature SDK δεν έχει λάβει άδεια χρήσης.
+  err_wacom_sdk_not_licensed: Το SDK δεν έχει άδεια (επανεκκίνηση υπολογιστή).
 
   label_first_name: "Όνομα:"
   label_last_name: "Επώνυμο:"
 
   msg_capture_failed: Η σύλληψη απέτυχε.
   msg_capture_successful: Επιτυχής σύλληψη!
+  msg_captured_signature: Η υπογραφή αποτυπώθηκε.
   msg_capturing_signature: Σύλληψη υπογραφής...
   msg_config_file_not_found: Το αρχείο ρυθμίσεων δεν βρέθηκε.
   msg_invalid_character_entered: 'Εισαγωγή μη έγκυρου χαρακτήρα: \ / : * ? " < > |'

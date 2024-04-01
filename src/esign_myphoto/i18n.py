@@ -22,6 +22,7 @@ class Translations:
 
         self.MSG_CAPTURE_FAILED = i18n.t("str.msg_capture_failed")
         self.MSG_CAPTURE_SUCCESSFUL = i18n.t("str.msg_capture_successful")
+        self.MSG_CAPTURED_SIGNATURE = i18n.t("str.msg_captured_signature")
         self.MSG_CAPTURING_SIGNATURE = i18n.t("str.msg_capturing_signature")
         self.MSG_CONFIG_FILE_NOT_FOUND = i18n.t("str.msg_config_file_not_found")
         self.MSG_INVALID_CHARACTER_ENTERED = i18n.t("str.msg_invalid_character_entered")

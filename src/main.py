@@ -1,5 +1,7 @@
 import logging
+import os
 import sys
+from logging.handlers import RotatingFileHandler
 from pathlib import Path
 
 import i18n as load_i18n
@@ -7,15 +9,23 @@ import i18n as load_i18n
 from esign_myphoto import io as app_io, i18n, utils
 from esign_myphoto.gui import App
 
-log_format = "[%(levelname)s] %(message)s"
-handlers = (logging.StreamHandler(sys.stdout),)
-logging.basicConfig(level=logging.INFO, format=log_format, handlers=handlers)  # NOSONAR
-
 data_path = Path(__file__).parent / "data"
 root_path = Path(__file__).parent.parent
 
 if getattr(sys, "frozen", False) and hasattr(sys, "_MEIPASS"):
     root_path = Path(sys.executable).parent
+
+os.makedirs(root_path / "logs", exist_ok=True)
+log_format = "[%(asctime)s] [%(levelname)s] - %(message)s"
+log_file_handler = RotatingFileHandler(
+    "logs/amy_e-sign_myphoto.log",
+    mode="a",
+    maxBytes=5000000,
+    backupCount=2,
+    encoding="utf-8",
+)
+handlers = (log_file_handler,)
+logging.basicConfig(level=logging.INFO, format=log_format, handlers=handlers)  # NOSONAR
 
 if __name__ == "__main__":
     config_file = root_path / "config/config.toml"

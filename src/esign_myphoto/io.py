@@ -96,6 +96,7 @@ def save_signature(
         file_path = save_path / f"{date}_{last_name}_{first_name}.jpg"
         image = Image.open(BytesIO(base64.b64decode(sig_data)))
         image.save(file_path)
+        log.info(load_i18n.t("str.msg_signature_saved", locale="en"))
         return SaveResult(True, i18n.tr.MSG_SIGNATURE_SAVED)
     except Exception as exc:
         log.error(load_i18n.t("str.err_during_sig_saving", locale="en"), exc_info=exc)

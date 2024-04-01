@@ -1,3 +1,4 @@
+import logging as log
 import tkinter as tk
 from pathlib import Path
 
@@ -30,8 +31,10 @@ class App(tk.Tk):
 
         if init_err:
             self.switch_frame(InitFrame(self, init_err))
+            log.error("App started with initialization error.")
         elif self._sig_config is not None:
             self.switch_frame(InputFrame(self))
+            log.info("App started.")
 
     def switch_frame(self, new_frame: tk.Frame) -> None:
         if self._frame is not None:

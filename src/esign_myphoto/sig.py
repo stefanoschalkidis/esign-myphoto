@@ -1,6 +1,7 @@
 import logging as log
 from dataclasses import dataclass
 
+import i18n as load_i18n
 import win32com.client
 
 from esign_myphoto import i18n
@@ -52,14 +53,19 @@ def capture_signature(
                 sig_config.padding_y,
                 sig_config.flags,
             )
-            msg = i18n.tr.MSG_CAPTURE_SUCCESSFUL
+            msg = i18n.tr.MSG_CAPTURED_SIGNATURE
+            log.info(load_i18n.t("str.msg_captured_signature", locale="en"))
         case 1:
             msg = i18n.tr.MSG_SIG_CAPTURE_CANCELLED
+            log.info(load_i18n.t("str.msg_sig_capture_cancelled", locale="en"))
         case 100:
             msg = i18n.tr.ERR_NO_DIGITIZER_CONNECTED
+            log.error(load_i18n.t("str.err_no_digitizer_connected", locale="en"))
         case 103:
             msg = i18n.tr.ERR_WACOM_SDK_NOT_LICENSED
+            log.error(load_i18n.t("str.err_wacom_sdk_not_licensed", locale="en"))
         case _:
             msg = f"Wacom error number {dyn_cap_result}."
+            log.error(msg)
 
     return CaptureResult(data, msg)
