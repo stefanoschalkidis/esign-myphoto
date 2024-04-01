@@ -8,7 +8,6 @@ class Translations:
         self.BUTTON_CAPTURE_SIGNATURE = i18n.t("str.button_capture_signature")
         self.BUTTON_HOME = i18n.t("str.button_home")
 
-        self.ERR_DURING_SIG_CAPTURE = i18n.t("str.err_during_sig_capture")
         self.ERR_DURING_SIG_SAVING = i18n.t("str.err_during_sig_saving")
         self.ERR_INITIALIZATION = i18n.t("str.err_initialization")
         self.ERR_LICENSE_OR_REASON_NOT_DEFINED = i18n.t(
@@ -29,8 +28,6 @@ class Translations:
         self.MSG_PLEASE_COMPLETE_ALL_FIELDS = i18n.t(
             "str.msg_please_complete_all_fields"
         )
-        self.MSG_PLEASE_RESTART_COMPUTER = i18n.t("str.msg_please_restart_computer")
-        self.MSG_PRESS_ENTER_TO_CLOSE = i18n.t("str.msg_press_enter_to_close")
         self.MSG_SIG_CAPTURE_CANCELLED = i18n.t("str.msg_sig_capture_cancelled")
         self.MSG_SIG_TABLE_MISSING = i18n.t("str.msg_sig_table_missing")
         self.MSG_SIGNATURE_SAVED = i18n.t("str.msg_signature_saved")
@@ -38,10 +35,6 @@ class Translations:
             "str.msg_wacom_driver_not_installed"
         )
         self.MSG_WACOM_SDK_NOT_INSTALLED = i18n.t("str.msg_wacom_sdk_not_installed")
-        self.MSG_WELCOME_TO_ESIGN_MYPHOTO = i18n.t("str.msg_welcome_to_esign_myphoto")
-
-        self.QUESTION_ENTER_FIRST_NAME = i18n.t("str.question_enter_first_name")
-        self.QUESTION_ENTER_LAST_NAME = i18n.t("str.question_enter_last_name")
 
         self.TITLE_INFORMATION = i18n.t("str.title_information")
 
