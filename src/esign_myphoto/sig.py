@@ -29,7 +29,7 @@ def capture_signature(
     sig_hash.Type = 6
     sig_hash.Add(sig_config.reason)
     dyn_cap.SetProperty("UILanguage", i18n.tr.LANG_CODE)
-    log.info(i18n.tr.MSG_CAPTURING_SIGNATURE)
+    log.info(load_i18n.t("str.msg_capturing_signature", locale="en"))
 
     dyn_cap_result = dyn_cap.Capture(
         sig_ctl,
