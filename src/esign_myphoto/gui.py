@@ -6,6 +6,13 @@ from esign_myphoto.config import SigConfig
 
 
 class App(tk.Tk):
+    """
+    Code from Stack Overflow. Original question:
+    https://stackoverflow.com/questions/7546050/switch-between-two-frames-in-tkinter
+    Answer by Stevoisiak:
+    https://stackoverflow.com/users/3357935/stevoisiak
+    """
+
     def __init__(
         self,
         init_err: str | None,
