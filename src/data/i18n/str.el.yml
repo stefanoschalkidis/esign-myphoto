@@ -1,13 +1,23 @@
 el:
+  button_capture_signature: Σύλληψη υπογραφής
+  button_home: Αρχική
+
   err_during_sig_capture: Σφάλμα κατά τη σύλληψη της υπογραφής.
   err_during_sig_saving: Σφάλμα κατά την αποθήκευση της υπογραφής.
+  err_initialization: Σφάλμα εκκίνησης.
   err_license_or_reason_not_defined: "Sig config: πεδίο άδεια ή λόγος που δεν έχει καθοριστεί."
   err_no_digitizer_connected: Δεν έχει συνδεθεί ψηφιακή γραφίδα.
   err_wacom_sdk_not_licensed: Το Wacom Signature SDK δεν έχει λάβει άδεια χρήσης.
 
+  label_first_name: "Όνομα:"
+  label_last_name: "Επώνυμο:"
+
+  msg_capture_failed: Η σύλληψη απέτυχε.
+  msg_capture_successful: Επιτυχής σύλληψη!
   msg_capturing_signature: Σύλληψη υπογραφής...
   msg_config_file_not_found: Το αρχείο ρυθμίσεων δεν βρέθηκε.
   msg_invalid_character_entered: 'Εισαγωγή μη έγκυρου χαρακτήρα: \ / : * ? " < > |'
+  msg_please_complete_all_fields: Παρακαλώ συμπληρώστε όλα τα πεδία.
   msg_please_restart_computer: "Παρακαλώ επανεκκινήστε τον υπολογιστή σας."
   msg_press_enter_to_close: "[INFO] Πατήστε enter για να κλείσετε την εφαρμογή. "
   msg_sig_capture_cancelled: Η σύλληψη της υπογραφής ακυρώθηκε.
@@ -19,3 +29,5 @@ el:
 
   question_enter_first_name: "[INFO] Παρακαλώ εισάγετε το όνομα: "
   question_enter_last_name: "[INFO] Παρακαλώ εισάγετε το επώνυμο: "
+
+  title_information: Ενημέρωση

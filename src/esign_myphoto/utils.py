@@ -1,15 +1,19 @@
 import logging as log
-import sys
+from dataclasses import dataclass
 
+import i18n as load_i18n
 import windows_tools.installed_software as wintools
 
 from esign_myphoto import i18n
 
 
-def are_wacom_deps_met() -> bool:
-    if not sys.platform.startswith("win32"):
-        return True
+@dataclass
+class WacomDepsCheckResult:
+    success: bool
+    msg: str | None
 
+
+def check_wacom_deps() -> WacomDepsCheckResult:
     programs = wintools.get_installed_software()
     has_sdk = False
     has_stu = False
@@ -28,11 +32,13 @@ def are_wacom_deps_met() -> bool:
             has_tablet = True
 
     if not has_sdk:
-        log.error(i18n.tr.MSG_WACOM_SDK_NOT_INSTALLED)
-        return False
+        lang_key = "str.msg_wacom_sdk_not_installed"
+        log.error(load_i18n.t(lang_key, locale="en"))
+        return WacomDepsCheckResult(False, i18n.tr.MSG_WACOM_SDK_NOT_INSTALLED)
 
     if not has_stu and not has_tablet:
-        log.error(i18n.tr.MSG_WACOM_DRIVER_NOT_INSTALLED)
-        return False
+        lang_key = "str.msg_wacom_driver_not_installed"
+        log.error(load_i18n.t(lang_key, locale="en"))
+        return WacomDepsCheckResult(False, i18n.tr.MSG_WACOM_DRIVER_NOT_INSTALLED)
 
-    return True
+    return WacomDepsCheckResult(True, None)

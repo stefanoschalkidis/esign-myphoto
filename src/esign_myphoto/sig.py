@@ -1,18 +1,22 @@
 import logging as log
-import sys
+from dataclasses import dataclass
 
 import win32com.client
 
 from esign_myphoto import i18n
 from esign_myphoto.config import SigConfig
-from esign_myphoto.io import Person
+
+
+@dataclass
+class CaptureResult:
+    data: str | None
+    msg: str
 
 
 def capture_signature(
-    sig_config: SigConfig, lang_code: str, signer: Person
-) -> str | None:
-    if not sys.platform.startswith("win32"):
-        return None
+    sig_config: SigConfig, last_name: str, first_name: str
+) -> CaptureResult:
+    data: str | None = None
 
     sig_ctl = win32com.client.Dispatch("Florentis.SigCtl.1")
     sig_key = win32com.client.Dispatch("Florentis.Key.1")
@@ -23,12 +27,12 @@ def capture_signature(
     sig_key.Set(7)
     sig_hash.Type = 6
     sig_hash.Add(sig_config.reason)
-    dyn_cap.SetProperty("UILanguage", lang_code)
+    dyn_cap.SetProperty("UILanguage", i18n.tr.LANG_CODE)
     log.info(i18n.tr.MSG_CAPTURING_SIGNATURE)
 
     dyn_cap_result = dyn_cap.Capture(
         sig_ctl,
-        f"{signer.last_name} {signer.first_name}",
+        f"{last_name} {first_name}",
         sig_config.reason,
         sig_hash,
         sig_key,
@@ -36,7 +40,7 @@ def capture_signature(
 
     match dyn_cap_result:
         case 0:
-            return sig_ctl.Signature.RenderBitmap(
+            data = sig_ctl.Signature.RenderBitmap(
                 "not_provided",
                 sig_config.image_width,
                 sig_config.image_height,
@@ -48,14 +52,14 @@ def capture_signature(
                 sig_config.padding_y,
                 sig_config.flags,
             )
+            msg = i18n.tr.MSG_CAPTURE_SUCCESSFUL
         case 1:
-            log.info(i18n.tr.MSG_SIG_CAPTURE_CANCELLED)
+            msg = i18n.tr.MSG_SIG_CAPTURE_CANCELLED
         case 100:
-            log.error(i18n.tr.ERR_NO_DIGITIZER_CONNECTED)
+            msg = i18n.tr.ERR_NO_DIGITIZER_CONNECTED
         case 103:
-            log.error(i18n.tr.ERR_WACOM_SDK_NOT_LICENSED)
-            log.error(i18n.tr.MSG_PLEASE_RESTART_COMPUTER)
+            msg = i18n.tr.ERR_WACOM_SDK_NOT_LICENSED
         case _:
-            log.error(i18n.tr.ERR_DURING_SIG_CAPTURE)
-            log.error(f"Wacom error number {dyn_cap_result}.")
-    return None
+            msg = f"Wacom error number {dyn_cap_result}."
+
+    return CaptureResult(data, msg)
