@@ -1,3 +1,4 @@
+import ctypes
 import logging
 import os
 import sys
@@ -8,6 +9,8 @@ import i18n as load_i18n
 
 from esign_myphoto import io as app_io, i18n, utils
 from esign_myphoto.gui import App
+
+ctypes.windll.shcore.SetProcessDpiAwareness(1)
 
 data_path = Path(__file__).parent / "data"
 root_path = Path(__file__).parent.parent

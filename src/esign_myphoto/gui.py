@@ -23,13 +23,16 @@ class App(tk.Tk):
         sig_config: SigConfig,
     ):
         tk.Tk.__init__(self)
-        screen_x = int((self.winfo_screenwidth() / 2) - (400 / 2))
-        screen_y = int((self.winfo_screenheight() / 2) - (200 / 2))
+        scale_factor = self.winfo_fpixels("1i") / 96.0
+        window_width = int(400 * scale_factor)
+        window_height = int(200 * scale_factor)
+        screen_x = int((self.winfo_screenwidth() / 2) - (window_width / 2))
+        screen_y = int((self.winfo_screenheight() / 2) - (window_height / 2))
         self._root_path = root_path
         self._sig_config = sig_config
         self._frame: tk.Frame | None = None
         self.title("AMY e-sign myPhoto")
-        self.geometry(f"400x200+{screen_x}+{screen_y}")
+        self.geometry(f"{window_width}x{window_height}+{screen_x}+{screen_y}")
 
         if sys.platform.startswith("win"):
             self.iconbitmap(data_path / "icons/logo/esign_myphoto.ico")
