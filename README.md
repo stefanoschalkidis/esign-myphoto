@@ -69,12 +69,12 @@ Double-click the file ***amy_e-sign_myphoto.exe*** in the unzipped folder to
 start the application.
 A window will open for you to enter the signer's last and first name.
 
-![e-sign myPhoto user input (english)](docs/images/esign_myphoto_input_en.png)
+![e-sign myPhoto user input (english)](docs/images/esign_myphoto_input_en_rounded.png)
 
 Press *enter* after you have entered the details to open the signature capture
 window.
 
-![e-sign myPhoto signature capture (english)](docs/images/esign_myphoto_capture_en.png)
+![e-sign myPhoto signature capture (english)](docs/images/esign_myphoto_capture_en_rounded.png)
 
 Press *OK* after the signature has been applied to save the signature.
 The signature is saved to the **output** folder next to the file
@@ -91,12 +91,12 @@ The signature is saved to the **output** folder next to the file
 Θα ανοίξει ένα παράθυρο για να εισαγάγετε το επώνυμο και το όνομα του
 υπογράφοντος.
 
-![e-sign myPhoto user input (greek)](docs/images/esign_myphoto_input_el.png)
+![e-sign myPhoto user input (greek)](docs/images/esign_myphoto_input_el_rounded.png)
 
 Πατήστε *enter* αφού εισαγάγετε τα στοιχεία για να ανοίξει το παράθυρο λήψης
 υπογραφής.
 
-![e-sign myPhoto signature capture (greek)](docs/images/esign_myphoto_capture_el.png)
+![e-sign myPhoto signature capture (greek)](docs/images/esign_myphoto_capture_el_rounded.png)
 
 Πατήστε *Εντάξει* μετά τη σύλληψη της υπογραφής για να αποθηκεύσετε την
 υπογραφή.
