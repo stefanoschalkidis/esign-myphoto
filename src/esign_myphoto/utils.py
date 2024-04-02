@@ -1,10 +1,17 @@
 import logging as log
+import sys
 from dataclasses import dataclass
 
 import i18n as load_i18n
-import windows_tools.installed_software as wintools
+
+if sys.platform.startswith("win"):
+    import windows_tools.installed_software as wintools
 
 from esign_myphoto import i18n
+
+
+def is_windows():
+    return sys.platform.startswith("win")
 
 
 @dataclass

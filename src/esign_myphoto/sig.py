@@ -1,10 +1,13 @@
 import logging as log
+import sys
 from dataclasses import dataclass
 
 import i18n as load_i18n
-import win32com.client
 
-from esign_myphoto import i18n
+if sys.platform.startswith("win"):
+    import win32com.client
+
+from esign_myphoto import i18n, utils
 from esign_myphoto.config import SigConfig
 
 
@@ -17,7 +20,8 @@ class CaptureResult:
 def capture_signature(
     sig_config: SigConfig, last_name: str, first_name: str
 ) -> CaptureResult:
-    data: str | None = None
+    if not utils.is_windows():
+        return CaptureResult(None, "Signature capture disabled on Linux.")
 
     sig_ctl = win32com.client.Dispatch("Florentis.SigCtl.1")
     sig_key = win32com.client.Dispatch("Florentis.Key.1")
@@ -39,6 +43,7 @@ def capture_signature(
         sig_key,
     )
 
+    data: str | None = None
     match dyn_cap_result:
         case 0:
             data = sig_ctl.Signature.RenderBitmap(

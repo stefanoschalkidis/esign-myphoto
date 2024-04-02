@@ -10,7 +10,8 @@ import i18n as load_i18n
 from esign_myphoto import io as app_io, i18n, utils
 from esign_myphoto.gui import App
 
-ctypes.windll.shcore.SetProcessDpiAwareness(1)
+if utils.is_windows():
+    ctypes.windll.shcore.SetProcessDpiAwareness(1)
 
 data_path = Path(__file__).parent / "data"
 root_path = Path(__file__).parent.parent
@@ -45,10 +46,11 @@ if __name__ == "__main__":
     ) and load_result.msg:
         init_err = load_result.msg
 
-    deps_check = utils.check_wacom_deps()
+    if utils.is_windows():
+        deps_check = utils.check_wacom_deps()
 
-    if not deps_check.success and deps_check.msg:
-        init_err = deps_check.msg
+        if not deps_check.success and deps_check.msg:
+            init_err = deps_check.msg
 
     app = App(init_err, root_path, data_path, load_result.sig_config)
     app.mainloop()
