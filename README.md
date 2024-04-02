@@ -62,7 +62,7 @@ For all other Wacom devices you need to install the
 ## Usage / Χρήση
 
 Download the latest version of the
-[app](https://github.com/stefanoschalkidis/esign-myphoto/releases/download/v1.0.0/esign_myphoto_v1.0.0.zip)
+[app](https://github.com/stefanoschalkidis/esign-myphoto/releases/download/v1.0.1/esign_myphoto_v1.0.1.zip)
 packaged as zip.
 Unzip the content to your desktop.
 Double-click the file ***amy_e-sign_myphoto.exe*** in the unzipped folder to
@@ -83,7 +83,7 @@ The signature is saved to the **output** folder next to the file
 ---
 
 Κατεβάστε την τελευταία έκδοση της
-[εφαρμογής](https://github.com/stefanoschalkidis/esign-myphoto/releases/download/v1.0.0/esign_myphoto_v1.0.0.zip)
+[εφαρμογής](https://github.com/stefanoschalkidis/esign-myphoto/releases/download/v1.0.1/esign_myphoto_v1.0.1.zip)
 σε μορφή zip.
 Αποσυμπιέστε το περιεχόμενο στην επιφάνεια εργασίας σας.
 Κάντε διπλό κλικ στο αρχείο ***amy_e-sign_myphoto.exe*** στο φάκελο που έχει
