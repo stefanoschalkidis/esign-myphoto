@@ -71,8 +71,8 @@ A window will open for you to enter the signer's last and first name.
 
 ![e-sign myPhoto user input (english)](docs/images/esign_myphoto_input_en_rounded.png)
 
-Press *enter* after you have entered the details to open the signature capture
-window.
+Press the *Capture signature* button after you have entered the details to open
+the signature capture window.
 
 ![e-sign myPhoto signature capture (english)](docs/images/esign_myphoto_capture_en_rounded.png)
 
@@ -93,8 +93,8 @@ The signature is saved to the **output** folder next to the file
 
 ![e-sign myPhoto user input (greek)](docs/images/esign_myphoto_input_el_rounded.png)
 
-Πατήστε *enter* αφού εισαγάγετε τα στοιχεία για να ανοίξει το παράθυρο λήψης
-υπογραφής.
+Πατήστε το κουμπί *Σύλληψη υπογραφής* αφού εισαγάγετε τα στοιχεία για να ανοίξει
+το παράθυρο σύλληψης υπογραφής.
 
 ![e-sign myPhoto signature capture (greek)](docs/images/esign_myphoto_capture_el_rounded.png)
 
