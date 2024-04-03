@@ -65,6 +65,13 @@ Download the latest version of the
 [app](https://github.com/stefanoschalkidis/esign-myphoto/releases/download/v1.0.1/esign_myphoto_v1.0.1.zip)
 packaged as zip.
 Unzip the content to your desktop.
+
+> **INFORMATION:**
+> Windows may classify the file ***amy_e-sign_myphoto.exe*** as potentially
+> dangerous and delete it.
+> When the file is detected by Windows Security, you have to allow it on this
+> computer.
+
 Double-click the file ***amy_e-sign_myphoto.exe*** in the unzipped folder to
 start the application.
 A window will open for you to enter the signer's last and first name.
@@ -86,6 +93,13 @@ The signature is saved to the **output** folder next to the file
 [εφαρμογής](https://github.com/stefanoschalkidis/esign-myphoto/releases/download/v1.0.1/esign_myphoto_v1.0.1.zip)
 σε μορφή zip.
 Αποσυμπιέστε το περιεχόμενο στην επιφάνεια εργασίας σας.
+
+> **ΕΝΗΜΕΡΩΣΗ:**
+> Τα Windows ενδέχεται να ταξινομήσουν το αρχείο ***amy_e-sign_myphoto.exe***
+> ως δυνητικά επικίνδυνο και να το διαγράψουν.
+> Όταν το αρχείο εντοπιστεί από την ασφάλεια των Windows (Windows Security),
+> πρέπει να το επιτρέψετε σε αυτόν τον υπολογιστή.
+
 Κάντε διπλό κλικ στο αρχείο ***amy_e-sign_myphoto.exe*** στο φάκελο που έχει
 αποσυμπιεστεί για να εκκινήσετε την εφαρμογή.
 Θα ανοίξει ένα παράθυρο για να εισαγάγετε το επώνυμο και το όνομα του
