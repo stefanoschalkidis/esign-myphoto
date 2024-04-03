@@ -116,16 +116,10 @@ The *typing* package needs to be removed as it clashes with *PyInstaller*:
 .venv\Scripts\python -m pip uninstall typing
 ```
 
-Clean *PyInstaller* cache and remove temporary files before building:
-
-```bash
-pdm run pyinstaller -clean
-```
-
 Build the application via:
 
 ```bash
-pdm run pyinstaller -n amy_e-sign_myphoto -w --add-data src/data:data --version-file=src/data/version/version_info.txt --icon=src/data/icons/logo/esign_myphoto.ico .\src\main.py
+pdm run pyinstaller -n amy_e-sign_myphoto --clean -w --add-data src/data:data --version-file=src/data/version/version_info.txt --icon=src/data/icons/logo/esign_myphoto.ico .\src\main.py
 ```
 
 The application is bundled into the **amy_e-sign_myphoto.exe** executable and
