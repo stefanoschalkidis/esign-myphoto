@@ -116,6 +116,12 @@ The *typing* package needs to be removed as it clashes with *PyInstaller*:
 .venv\Scripts\python -m pip uninstall typing
 ```
 
+Clean *PyInstaller* cache and remove temporary files before building:
+
+```bash
+pdm run pyinstaller -clean
+```
+
 Build the application via:
 
 ```bash
