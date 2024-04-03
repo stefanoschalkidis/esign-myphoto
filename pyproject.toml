@@ -1,6 +1,6 @@
 [project]
 name = "esign-myphoto"
-version = "1.0.2.dev0"
+version = "1.0.2"
 description = "App for capturing signature images according to the myPhoto specifications."
 authors = [
     {name = "Stefanos Chalkidis"},
