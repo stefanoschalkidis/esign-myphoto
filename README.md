@@ -62,15 +62,14 @@ For all other Wacom devices you need to install the
 ## Usage / Χρήση
 
 Download the latest version of the
-[app](https://github.com/stefanoschalkidis/esign-myphoto/releases/download/v1.0.1/esign_myphoto_v1.0.1.zip)
+[app](https://github.com/stefanoschalkidis/esign-myphoto/releases/download/v1.0.2/esign_myphoto_v1.0.2.zip)
 packaged as zip.
 Unzip the content to your desktop.
 
 > **INFORMATION:**
-> Windows may classify the file ***amy_e-sign_myphoto.exe*** as potentially
-> dangerous and delete it.
-> When the file is detected by Windows Security, you have to allow it on this
-> computer.
+> Some antivirus programs (Avast, AVG) may classify the file
+> ***amy_e-sign_myphoto.exe*** as potentially dangerous and delete it.
+> When the file is detected, you have to allow it on this computer.
 
 Double-click the file ***amy_e-sign_myphoto.exe*** in the unzipped folder to
 start the application.
@@ -90,15 +89,15 @@ The signature is saved to the **output** folder next to the file
 ---
 
 Κατεβάστε την τελευταία έκδοση της
-[εφαρμογής](https://github.com/stefanoschalkidis/esign-myphoto/releases/download/v1.0.1/esign_myphoto_v1.0.1.zip)
+[εφαρμογής](https://github.com/stefanoschalkidis/esign-myphoto/releases/download/v1.0.2/esign_myphoto_v1.0.2.zip)
 σε μορφή zip.
 Αποσυμπιέστε το περιεχόμενο στην επιφάνεια εργασίας σας.
 
 > **ΕΝΗΜΕΡΩΣΗ:**
-> Τα Windows ενδέχεται να ταξινομήσουν το αρχείο ***amy_e-sign_myphoto.exe***
-> ως δυνητικά επικίνδυνο και να το διαγράψουν.
-> Όταν το αρχείο εντοπιστεί από την ασφάλεια των Windows (Windows Security),
-> πρέπει να το επιτρέψετε σε αυτόν τον υπολογιστή.
+> Ορισμένα προγράμματα antivirus (Avast, AVG) ενδέχεται να ταξινομήσουν το
+> αρχείο ***amy_e-sign_myphoto.exe*** ως δυνητικά επικίνδυνο και να το
+> διαγράψουν.
+> Όταν το αρχείο εντοπιστεί, πρέπει να το επιτρέψετε σε αυτόν τον υπολογιστή.
 
 Κάντε διπλό κλικ στο αρχείο ***amy_e-sign_myphoto.exe*** στο φάκελο που έχει
 αποσυμπιεστεί για να εκκινήσετε την εφαρμογή.
