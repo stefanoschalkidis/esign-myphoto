@@ -43,7 +43,7 @@ please have a look at the application
 ## Required Dependencies / Απαιτούμενες εξαρτήσεις
 
 The app requires the 
-[Wacom Signature SDK](https://developer-docs.wacom.com/docs/sdk-for-signature/guides/download/)
+[Wacom Signature SDK](https://developer-docs.wacom.com/docs/sdk-for-signature/download/)
 to be installed.
 If you are using a STU device, you need to install the
 [Wacom STU Driver](https://developer-support.wacom.com/hc/en-us/articles/9354527258007-STU-Driver-Installation).
@@ -53,7 +53,7 @@ For all other Wacom devices you need to install the
 ---
 
 Η εφαρμογή απαιτεί την εγκατάσταση του
-[Wacom Signature SDK](https://developer-docs.wacom.com/docs/sdk-for-signature/guides/download/).
+[Wacom Signature SDK](https://developer-docs.wacom.com/docs/sdk-for-signature/download/).
 Εάν χρησιμοποιείτε συσκευή STU, πρέπει να εγκαταστήσετε τον οδηγό
 [Wacom STU Driver](https://developer-support.wacom.com/hc/en-us/articles/9354527258007-STU-Driver-Installation).
 Για όλες τις άλλες συσκευές Wacom πρέπει να εγκαταστήσετε τον οδηγό
